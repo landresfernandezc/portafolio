@@ -1,156 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Personal portafolio</title>
-        <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Personal portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="brand">logo</h1>
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="links-container">
+        <li class="links-item"><a href="#home" class="link active">Home</a></li>
+        <li class="links-item"><a href="#about" class="link">Projects</a></li>
+        <li class="links-item"><a href="#project" class="link">About</a></li>
+        <li class="links-item"><a href="#contact" class="link">Contact</a></li>
+      </ul>
+    </nav>
+    <!---Home Section-->
+    <section class="home" id="home-section">
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          <span class="highlight">Hi, </span>I am Andrés
+        </h1>
 
-    </head>
-    <body>
-        <nav class="navbar">
-            <h1 class="brand">logo</h1>
-            <div class="toggle-btn">
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="links-container">
-                <li class="links-item"> <a href="#home" class="link active">Home</a></li>
-                <li class="links-item"> <a href="#about" class="link ">Projects</a></li>
-                <li class="links-item"> <a href="#project" class="link ">About</a></li>
-                <li class="links-item"> <a href="#contact" class="link ">Contact</a></li>
-            </ul>
-        </nav>
-        <!---Home Section-->
-        <section class="home" id="home-section">
-            <div class="hero-content">
-                <h1 class="hero-heading"><span class="highlight">Hi, </span>I am Andrés</h1>
+        <p class="profession">Web Developer</p>
+        <p class="info">
+          I'm a person very positive, adaptable,productive, I like new the
+          challenges, work team, help the people. Passionate for learn new
+          technologies and grow myself like Profesional and human. I like
+          finances and technology.I love do martial arts and play football. I
+          like help people solving problems with technology. I always see the
+          best in difficult situations.
+        </p>
+        <a href="#contact-section" class="btn">Contact</a>
+      </div>
+      <img src="img/perfilImg.png" class="image" alt="" />
+    </section>
 
-                <p class="profession"> Web Developer</p>
-                <p class="info"> I'm a person very positive, adaptable,productive, I like new the challenges, work team, help the people. Passionate for learn new technologies and grow myself like Profesional and human. I like finances and technology.I love do martial arts and play football. I like help people solving problems with technology. I always see the best in difficult situations.</p>
-                <a href="#contact-section" class="btn">Contact</a>
-            </div>
-            <img src="img/perfilImg.png"  class="image" alt="">
-        </section>
+    <section class="about" id="about-section">
+      <h2 class="heading">About <span class="highlight">me </span></h2>
+      <p class="sub-heading">My information.</p>
+      <div class="separator"></div>
+      <div class="about-me-container">
+        <div class="left-col">
+          <img src="img/myPortafolioImg.jpg" class="about-image" />
+        </div>
+        <div class="right-col">
+          <p class="about-para">
+            Software developer with 3+ years of experience developing web
+            applications, spanning from database design and implementation to
+            both client and server solutions, having a proficient knowledge in
+            programming languages and technologies such as HTML, CSS,
+            JavaScript, Angular, React.js, Node.js and more. I consider myself
+            to be disciplined, highly motivated person, always willing to face
+            new challenges and improve my skills. I've led processes and work
+            teams, participating in different stages of software development
+            cycle using best practices and agile methodologies.
+          </p>
+          <a href="#" class="btn">Download Resume</a>
+        </div>
+      </div>
+      <h2 class="heading">Languages and Tools I know</h2>
+      <div class="separator"></div>
+      <div class="skill-container">
+        <div class="skill-card" style="--bg: #f06529">
+          <p class="skill">HTML</p>
+        </div>
+        <div class="skill-card" style="--bg: #164ed8">
+          <p class="skill">CSS</p>
+        </div>
+        <div class="skill-card" style="--bg: #e6da10">
+          <p class="skill">JS</p>
+        </div>
+        <div class="skill-card" style="--bg: #01bffd">
+          <p class="skill">React JS</p>
+        </div>
+        <div class="skill-card" style="--bg: #fd0606">
+          <p class="skill">Angular</p>
+        </div>
+        <div class="skill-card" style="--bg: #15a71c">
+          <p class="skill">Node JS</p>
+        </div>
+        <div class="skill-card" style="--bg: #0033ce">
+          <p class="skill">SQL</p>
+        </div>
+        <div class="skill-card" style="--bg: #7952b3">
+          <p class="skill">Bootstrapt</p>
+        </div>
+        <div class="skill-card" style="--bg: #a08720">
+          <p class="skill">jQuery</p>
+        </div>
+        <div class="skill-card" style="--bg: #f14e32">
+          <p class="skill">GIT</p>
+        </div>
+        <div class="skill-card large" style="--bg: #b4b1ce">
+          <p class="skill">More: Resume</p>
+        </div>
+      </div>
+    </section>
+    <section class="project" id="project-section">
+      <h2 class="heading">Project <span class="highlight">s </span></h2>
+      <p class="sub-heading">
+        Information that project that I have participated.
+      </p>
+      <div class="separator"></div>
+      <div class="filters">
+        <button class="filter-btn active" id="all">All</button>
+        <button class="filter-btn" id="fullstack">Full Stack</button>
+        <button class="filter-btn" id="javascript">JavaScript</button>
+        <button class="filter-btn" id="ui">UI/UX</button>
+        <button class="filter-btn" id="backend">Backend</button>
+        <button class="filter-btn" id="backbone">BackBone JS</button>
+        <button class="filter-btn" id="grails">Grails 4.0</button>
+        <button class="filter-btn" id="jquery">jQuery</button>
+        <button class="filter-btn" id="sql">SQL</button>
+        <button class="filter-btn" id="coldfusion">ColdFusion</button>
+      </div>
+      <div class="project-container"></div>
+    </section>
 
-        <section class="about" id="about-section">
-            <h2 class="heading">
-                About  <span class="highlight">me </span>
-            </h2>
-            <p class="sub-heading">
-                My information.
-            </p>
-            <div class="separator"> </div>
-            <div class="about-me-container">
-                <div class="left-col">
-                    <img src="img/myPortafolioImg.jpg" class="about-image">
-                </div>
-                <div class="right-col">
-                    <p class="about-para">
-                        Software developer with 3+ years of experience developing web
-                        applications, spanning from database design and implementation to
-                        both client and server solutions, having a proficient knowledge in
-                        programming languages and technologies such as HTML, CSS,
-                        JavaScript, Angular, React.js, Node.js and more.
-                        I consider myself to be disciplined, highly motivated person, always
-                        willing to face new challenges and improve my skills. I've led processes
-                        and work teams, participating in different stages of software
-                        development cycle using best practices and agile methodologies.
+    <section class="contact" id="contact-section">
+      <h2 class="heading">Contact <span class="highlight">me </span></h2>
+      <p class="sub-heading">Contact information.</p>
+      <div class="separator"></div>
 
-                    </p>
-                    <a href="#" class="btn">Download Resume</a>
-                </div>
-            </div>
-            <h2 class="heading">Languages and Tools I know</h2>
-            <div class="separator"></div>
-            <div class="skill-container">
-                <div class="skill-card" style="--bg: #f06529">
-                    <p class="skill">HTML</p>
-                </div>
-                <div class="skill-card" style="--bg: #164ed8">
-                    <p class="skill">CSS</p>
-                </div>
-                <div class="skill-card" style="--bg: #e6da10">
-                    <p class="skill">JS</p>
-                </div>
-                <div class="skill-card" style="--bg: #01bffd">
-                    <p class="skill">React JS</p>
-                </div>
-                <div class="skill-card" style="--bg: #fd0606">
-                    <p class="skill">Angular</p>
-                </div>
-                <div class="skill-card" style="--bg: #15a71c">
-                    <p class="skill">Node JS</p>
-                </div>
-                <div class="skill-card" style="--bg: #0033ce">
-                    <p class="skill">SQL</p>
-                </div>
-                <div class="skill-card" style="--bg: #7952b3">
-                    <p class="skill">Bootstrapt</p>
-                </div>
-                <div class="skill-card" style="--bg: #a08720">
-                    <p class="skill">jQuery</p>
-                </div>
-                <div class="skill-card" style="--bg: #f14e32">
-                    <p class="skill">GIT</p>
-                </div>
-                <div class="skill-card large" style="--bg: #b4b1ce">
-                    <p class="skill">More: Resume</p>
-                </div>
-            </div>
-        </section>
-        <section class="project" id="project-section">
-            <h2 class="heading">
-                Project  <span class="highlight">s </span>
-            </h2>
-            <p class="sub-heading">
-                Information that project that I have participated.
-            </p>
-            <div class="separator"> </div>
-            <div class="filters">
-                <button class="filter-btn active" id="all"> All</button>
-                <button class="filter-btn" id="fullstack">Full Stack</button>
-                <button class="filter-btn" id="javascript">JavaScript</button>
-                <button class="filter-btn" id="ui">UI/UX</button>
-                <button class="filter-btn" id="backend">Backend</button>
-                <button class="filter-btn" id="backbone">BackBone JS</button>
-                <button class="filter-btn" id="grails">Grails 4.0</button>
-                <button class="filter-btn" id="jquery">jQuery</button>
-                <button class="filter-btn" id="sql">SQL</button>
-                <button class="filter-btn" id="coldfusion">ColdFusion</button>
-            </div>
-            <div class="project-container">
-               
-               
-            </div>
-        </section>
-        
-        <section class="contact" id="contact-section">
-            <h2 class="heading">
-                Contact  <span class="highlight">me </span>
-            </h2>
-            <p class="sub-heading">
-                Contact information.
-            </p>
-            <div class="separator"> </div>
-
-            <div class="contact-form">
-                <div class="name">
-                    <input type="text" class="first-name" required placeholder="First name">
-                    <input type="text" class="last-name" required placeholder="Last name">
-
-                </div>
-                <input type="email" required class="email" placeholder="Email">
-                <textarea class="message" placeholder="Message" required></textarea>
-                <button class="btn contact-btn">Contact </button>
-
-            </div>
-        </section>
-        <footer class="footer">
-            Copyright by Andrés Fernández
-        </footer>
-        <script src="project.js"></script>
-        <script src="app.js"></script>
-    </body>
+      <div class="contact-form">
+        <div class="name">
+          <input
+            type="text"
+            class="first-name"
+            required
+            placeholder="First name"
+          />
+          <input
+            type="text"
+            class="last-name"
+            required
+            placeholder="Last name"
+          />
+        </div>
+        <input type="email" required class="email" placeholder="Email" />
+        <textarea class="message" placeholder="Message" required></textarea>
+        <button class="btn contact-btn">Contact</button>
+      </div>
+    </section>
+    <footer class="footer">Copyright by Andrés Fernández</footer>
+    <script src="project.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
