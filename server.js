@@ -7,8 +7,8 @@ dotenv.config();
 let initialPath = path.join(__dirname, "public");
 let app = express();
 app.use(express.static(initialPath));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded());
 app.get("/", (req, res) => {
   res.sendFile(path.join(initialPath, "index.html"));
 });
