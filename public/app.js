@@ -1,16 +1,16 @@
 //toggle
 const toggleBtn=document.querySelector('.toggle-btn');
-const linkContainer=document.querySelector('.link-container');
+const linkContainer=document.querySelector('.links-container');
 toggleBtn.addEventListener('click',()=>{
     toggleBtn.classList.toggle('active');
     linkContainer.classList.toggle('show');
 })
-
 const links=document.querySelectorAll('.link');
 links.forEach(link=>{
     link.addEventListener('click',()=>{
         links.forEach(ele=>ele.classList.remove('active'));
         link.classList.add('active');
+        toggleBtn.click();
     })
 })
 //Creating dynamic project card
@@ -20,7 +20,13 @@ projects.forEach(project=>{
     <img src="img/${project.image}" alt="">
     <div class="content">
         <h1 class="project-name"> ${project.name}</h1>
-        <span class="tags">${project.tags}</span>
+                <p>
+                ${
+                    Object.keys(project.tags).map(function(tag){
+                        return "<span class='tags'>"+project.tags[tag]+"</span></br>"
+                    }).join("")
+                }
+                </p>
     </div>
 </div>`
 })
